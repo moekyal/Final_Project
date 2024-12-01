@@ -133,6 +133,13 @@ h1 {
   background: #222;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+a{
+  color:#007BFF;
+}
+
+span.PIN_1733042004292_embed_grid .PIN_1733042004292_ft .PIN_1733042004292_button .PIN_1733042004292_label .PIN_1733042004292_string {
+  color: #000000;
+}
 
 h1:focus{
   border-color: #007BFF;
@@ -158,11 +165,6 @@ h2 {
   /* display: flex; */
   /* flex-direction: column; */
   align-items: center;
-}
-
-.style-card:focus-within {
-  border-color: #007BFF;
-  transform: scale(1.02); /* Slightly enlarge on focus */
 }
 
 .style-img {
@@ -252,4 +254,21 @@ p{
     background: #ccc;
   }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable transition effects for images */
+  img, figure {
+    transition: none;
+  }
+
+  /* Disable hover effects for controls */
+  .control:focus, .control:hover {
+    transform: none;
+  }
+
+  /* Disable scaling on h1 focus */
+  h1:focus {
+    transform: none;
+  }
 }
