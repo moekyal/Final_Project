@@ -94,15 +94,6 @@ body {
   margin-top: 20px;
 }
 
-figure {
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 img {
   width: 100%;
   height: 100%;
@@ -112,8 +103,16 @@ img {
 }
 
 img:focus {
-  outline: 4px solid rgb(255, 0, 0); /* Make the outline thicker */
-  outline-offset: 4px; /* Add space between the image and the outline */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Fashion Styles Section */
@@ -135,6 +134,10 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+h1:focus{
+  border-color: #007BFF;
+  transform: scale(1.02);
+}
 
 h2 {
   font-size: 2rem;
@@ -151,10 +154,15 @@ h2 {
   background-color: #222;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
+}
+
+.style-card:focus-within {
+  border-color: #007BFF;
+  transform: scale(1.02); /* Slightly enlarge on focus */
 }
 
 .style-img {
@@ -187,7 +195,7 @@ footer {
 }
 
 footer:focus {
-  outline: 2px solid #ff0; /* Custom focus style */
+  outline: 0.25em solid rgb(20, 104, 221); /* Custom focus style */
 }
 
 p{
@@ -245,5 +253,3 @@ p{
   }
 
 }
-
-
