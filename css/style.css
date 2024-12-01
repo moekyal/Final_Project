@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list style and reset margin and padding */
+nav ul {
+  list-style-type: none; /* No bullets */
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the items horizontally */
+  flex-wrap: wrap;
+  row-gap: 1ch;
+}
+
+/* Style for each list item */
+nav ul li {
+  margin-right: 2vw; /* Space between items */
+}
+
+/* Style for the anchor tags (links) */
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: rgb(255, 255, 255); /* Text color */
+  /* font-weight: bold; Make text bold */
+  padding: 1.5em 2.5em; /* Add padding to make links more clickable */
+}
+
+/* Optional: Add a hover effect */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding to the header section */
+header {
+  padding: 2vh 0;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+}
+
+body {
+  /* background: linear-gradient(to bottom, #000000, #711300); Blue gradient from top to bottom */
+  background-color: rgb(0, 0, 0);
+  color: white; /* Optional: changes text color for better contrast */
+  margin: 0; /* Optional: Removes default margin */
+  height: 100vh; /* Ensure the gradient covers the full height of the page */
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 1ch;
+}
+
+.control {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.control:focus{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.control:hover {
+  background-color: #555;
+  transform:scale(1.1);
+}
+
+.mixitup-control-active {
+  background-color: #222;
+}
+
+
+/* Gallery container styling */
+.container.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:focus {
+  outline: 4px solid rgb(255, 0, 0); /* Make the outline thicker */
+  outline-offset: 4px; /* Add space between the image and the outline */
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+  .control:focus{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  /* Style for the anchor tags (links) */
+  nav ul li a {
+    color: rgb(0, 0, 0); /* Text color */
+    /* font-weight: bold; Make text bold */
+  }
+  
+  /* Optional: Add a hover effect */
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Fashion Styles Section */
+.fashion-styles {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem;
+  background: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.style-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.style-card {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.style-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.style-description {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.style-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.style-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer:focus {
+  outline: 2px solid #ff0; /* Custom focus style */
+}
+
+#pinterest-board {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#pinterest-board a,
+#pinterest-board blockquote {
+  display: block;
+  width: 100% !important;  /* Ensures it takes up full container width */
+  height: auto !important; /* Let the height adjust dynamically */
+}

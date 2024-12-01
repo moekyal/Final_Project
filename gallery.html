@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="dist/css/lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gallery</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <div class="off-screen-menu">
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    <div class="controls">
+      <button type="button" class="control" data-filter="all">All</button>
+      <button type="button" class="control" data-filter=".androgynous">Androgynous</button>
+      <button type="button" class="control" data-filter=".avantgarde">Avant Garde</button>
+      <button type="button" class="control" data-filter=".bohemian">Bohemian</button>
+      <button type="button" class="control" data-filter=".resort">Resort</button>
+      <button type="button" class="control" data-filter=".vintage">Vintage</button>
+      <button type="button" class="control" data-sort="default:asc">Asc</button>
+      <button type="button" class="control" data-sort="default:desc">Desc</button>
+    </div>
+
+    <div class="container gallery">
+      <!-- Randomized order of images -->
+      <figure class="mix vintage">
+        <img src="images/vintage/1952 Madame Gres.jfif" alt="1952 Madame Gres" tabindex="0">
+      </figure>
+
+      <figure class="mix androgynous">
+        <img src="images/androgynous/Bon Marché.jpg" alt="NYFW" tabindex="0">
+      </figure>
+
+      <figure class="mix resort">
+        <img src="images/resort/Zimmermann Resort 2025 Fashion Show.jpg" alt="Alexander McQueen Resort 2018 Fashion Show" tabindex="0">
+      </figure>
+
+      <figure class="mix bohemian">
+        <img src="images/bohemian/Dior Cruise 2024.jpg" tabindex="0">
+      </figure>
+
+      <figure class="mix vintage">
+        <img src="images/vintage/Grace_Kelly.jfif" tabindex="0">
+      </figure>
+
+      <figure class="mix resort">
+        <img src="images/resort/Chanel Resort 2020 Fashion Show.jpg" alt="Alexander McQueen Resort 2018 Fashion Show" tabindex="0">
+      </figure>
+
+      <figure class="mix androgynous">
+        <img src="images/androgynous/Ermanno Scervino Fall 2013.jpg" alt="NYFW" tabindex="0">
+      </figure>
+
+      <figure class="mix bohemian">
+        <img src="images/bohemian/Chanel Pre-Fall 2014 Fashion Show.jpg" alt="Chanel" tabindex="0">
+      </figure>
+
+      <figure class="mix avantgarde">
+        <img src="images/avant_garde/Guo Pei Fall_Winter 2018.jfif" alt="Architecture Fashion" tabindex="0">
+        <figcaption>meow</figcaption>
+      </figure>
+
+      <figure class="mix resort">
+        <img src="images/resort/Alexander McQueen Resort 2019 Collection.jpg" alt="Alexander McQueen Resort 2018 Fashion Show" tabindex="0">
+      </figure>
+
+      <figure class="mix vintage">
+        <img src="images/vintage/Christy Turlington.jfif" tabindex="0">
+      </figure>
+
+      <figure class="mix bohemian">
+        <img src="images/bohemian/Chloe Does 70s Style for Fall 2015.jpg" tabindex="0">
+      </figure>
+
+      <figure class="mix avantgarde">
+        <img src="images/avant_garde/Architecture_fashion.jfif" alt="Architecture Fashion" tabindex="0">
+        <figcaption>meow</figcaption>
+      </figure>
+
+      <figure class="mix androgynous">
+        <img src="images/androgynous/Mark Bryan.jpg" alt="NYFW" tabindex="0">
+      </figure>
+
+      <figure class="mix vintage">
+        <img src="images/vintage/Grace_Kelly (2).jfif" tabindex="0">
+      </figure>
+
+      <figure class="mix resort">
+        <img src="images/resort/Zimmerman Resort 2018.jpg" alt="Alexander McQueen Resort 2018 Fashion Show" tabindex="0">
+      </figure>
+
+      <figure class="mix bohemian">
+        <img src="images/bohemian/Etro Spring 2017 Fashion Show.jpg" tabindex="0">
+      </figure>
+
+      <figure class="mix vintage">
+        <img src="images/vintage/Yves Saint Laurent 2001.jfif" tabindex="0">
+      </figure>
+
+      <figure class="mix avantgarde">
+        <img src="images/avant_garde/Guo Pei Couture Fall 2019.jfif" alt="Architecture Fashion" tabindex="0">
+        <figcaption>meow</figcaption>
+      </figure>
+
+      <figure class="mix resort">
+        <img src="images/resort/Runway_ Chanel Spring_Summer 2020 Resort __ This Is Glamorous (TIG).jpg" alt="Alexander McQueen Resort 2018 Fashion Show" tabindex="0">
+      </figure>
+
+      <figure class="mix androgynous">
+        <img src="images/androgynous/Thom Browne Spring 2018.jpg" alt="NYFW" tabindex="0">
+      </figure>
+
+      <figure class="mix avantgarde">
+        <img src="images/avant_garde/Weinsanto.jfif" alt="Architecture Fashion" tabindex="0">
+        <figcaption>meow</figcaption>
+      </figure>
+
+      <figure class="mix vintage">
+        <img src="images/vintage/Vintage.jfif" tabindex="0">
+      </figure>
+
+      <figure class="mix bohemian">
+        <img src="images/bohemian/Fashion Week_Reviews.jpg" tabindex="0">
+      </figure>
+    </div>
+  </main>
+
+  <footer tabindex="0">
+    &copy; 2024 Moe Kyal Tun. All rights reserved.
+  </footer>
+
+  <script src="js/mixitup.min.js"></script>
+  <script>
+    var containerEl = document.querySelector('.container');
+    var mixer = mixitup(containerEl);
+  </script>
+</body>
+</html>
