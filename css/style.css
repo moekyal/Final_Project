@@ -23,7 +23,7 @@ nav ul li a {
   text-decoration: none; /* Remove underline */
   color: rgb(255, 255, 255); /* Text color */
   /* font-weight: bold; Make text bold */
-  padding: 1.5em 2.5em; /* Add padding to make links more clickable */
+  padding: 1.5em 1.5em; /* Add padding to make links more clickable */
 }
 
 /* Optional: Add a hover effect */
@@ -135,10 +135,6 @@ h1 {
 }
 a{
   color:#007BFF;
-}
-
-span.PIN_1733042004292_embed_grid .PIN_1733042004292_ft .PIN_1733042004292_button .PIN_1733042004292_label .PIN_1733042004292_string {
-  color: #000000;
 }
 
 h1:focus{
